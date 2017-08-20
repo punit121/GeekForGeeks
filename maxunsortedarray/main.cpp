@@ -29,7 +29,7 @@ int max_f(int a[],int l,int r)
 
 void maxunsorted(int a[],int n)
 {
-    int l=0,r=n-1,minf,maxf;
+    int l=0,r=n-1,minf,maxf;//declaring vars
     for(int i=0;i<n-1;i++)
     {
         if(a[i]<a[i+1])
@@ -40,7 +40,7 @@ void maxunsorted(int a[],int n)
         break;
         }
     }
-
+//upper bound
     for(int j=n-1;j>0;j--)
     {
         if(a[j]>a[j-1])
